@@ -1,0 +1,26 @@
+# --- Binari ed eseguibili Go ---
+markdown-converter
+markdown-converter.exe
+*.exe
+bin/
+
+# --- Documentazione (Esclusione totale contenuti) ---
+# Ignoriamo tutto quello che c'è dentro, ma teniamo le cartelle
+input_md/*
+output_html/*
+
+# --- Eccezioni per mantenere le cartelle su Git ---
+# (Opzionale: crea un file vuoto chiamato .gitkeep in ogni cartella)
+!input_md/.gitkeep
+!output_html/.gitkeep
+
+# --- File di sistema e IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# --- Dipendenze ---
+# go.sum è consigliato tenerlo, ma se preferisci un ambiente "puro" 
+# puoi ignorare i file di log o temporanei
+*.log
