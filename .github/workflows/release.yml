@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*' # Si attiva quando pushi un tag che inizia per v (es: v1.0.1)
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build Binary
